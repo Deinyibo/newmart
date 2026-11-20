@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-NG">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NewMart — Every store in Port Harcourt, one cart</title>
+  <meta name="description" content="Shop fashion, groceries and electronics from verified Port Harcourt stores. Escrow-protected online payments or pay on delivery.">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="kira-kit/kira-motion.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-inner">
+          <div class="hero-content" data-motion="fade-up">
+            <h1 class="hero-title">Every store in Port Harcourt, one cart.</h1>
+            <p class="hero-text">Shop fashion, groceries and electronics from local businesses you can verify. Pay online and your money stays in escrow until you confirm delivery — or choose pay on delivery.</p>
+            <div class="search-box">
+              <input type="search" id="hero-search" placeholder="Search products, stores, categories…" aria-label="Search products, stores, categories">
+              <button type="button" id="hero-search-btn">Search</button>
+            </div>
+            <div class="hero-actions">
+              <a href="#picks" class="btn btn-primary">Start shopping</a>
+              <a href="sell.html" class="btn btn-secondary">Sell on NewMart</a>
+            </div>
+            <div class="trust-strip">
+              <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Escrow-protected</span>
+              <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.56 12.56 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.56 12.56 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Pay on delivery</span>
+              <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Real Port Harcourt stores</span>
+            </div>
+          </div>
+          <div class="hero-media" data-motion="fade-left">
+            <img src="assets/home-hero.jpg" alt="Ankara fabric, fresh produce and gadgets arranged on a white background" width="1200" height="675">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="section" id="categories">
+      <div class="container">
+        <h2 class="section-title" data-motion="fade-up">Shop by category</h2>
+        <p class="section-lead" data-motion="fade-up">Each tile opens a filtered grid where every product shows its ₦ price, stock status and the store that sells it.</p>
+        <div class="category-grid" data-motion="fade-up" data-motion-stagger="80" id="category-grid"></div>
+      </div>
+    </section>
+
+    <!-- Featured stores -->
+    <section class="section" style="background:var(--surface);" id="stores">
+      <div class="container">
+        <h2 class="section-title" data-motion="fade-up">Featured stores in Port Harcourt</h2>
+        <p class="section-lead" data-motion="fade-up">Verified local businesses with ratings earned only after delivered orders.</p>
+        <div class="card-grid" data-motion="fade-up" data-motion-stagger="80" id="store-grid"></div>
+      </div>
+    </section>
+
+    <!-- Today's picks -->
+    <section class="section" id="picks">
+      <div class="container">
+        <div class="flex justify-between items-center flex-wrap gap-2" style="margin-bottom:1.5em;">
+          <div>
+            <h2 class="section-title" data-motion="fade-up">Today's picks</h2>
+            <p class="section-lead mt-0" data-motion="fade-up">Live product grid with ₦ prices and add to cart.</p>
+          </div>
+          <div class="chips" id="filter-chips" data-motion="fade-up">
+            <button class="chip active" data-filter="all">All</button>
+            <button class="chip" data-filter="Fashion & Tailoring">Fashion</button>
+            <button class="chip" data-filter="Groceries & Foodstuff">Groceries</button>
+            <button class="chip" data-filter="Electronics & Gadgets">Electronics</button>
+          </div>
+        </div>
+        <div class="card-grid" data-motion="fade-up" data-motion-stagger="80" id="product-grid"></div>
+      </div>
+    </section>
+
+    <!-- Escrow -->
+    <section class="section" id="escrow">
+      <div class="container">
+        <div class="feature-block">
+          <div data-motion="fade-up">
+            <h2 class="section-title">Your money is held until you're happy</h2>
+            <p>When you pay online — by card, bank transfer or USSD through Paystack — NewMart holds your payment in escrow. The store prepares and ships your order, and only when you tap <strong>Confirm delivery</strong> is the money released to the seller, minus our 5% commission.</p>
+            <p>Something wrong? Raise a dispute and our team reviews it: we refund you or release to the seller. No confirmation, no release.</p>
+            <a href="#picks" class="btn btn-primary" style="margin-top:8px;">Shop with escrow</a>
+          </div>
+          <div class="feature-media" data-motion="fade-up">
+            <img src="assets/store-electronics.jpg" alt="Smartphone, speaker and headphones arranged on a white desk" width="600" height="600">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POD -->
+    <section class="section" style="background:var(--surface);" id="pod">
+      <div class="container">
+        <div class="feature-block reverse">
+          <div data-motion="fade-up">
+            <h2 class="section-title">Prefer pay on delivery? It's built in.</h2>
+            <p>Choose <strong>Pay on delivery</strong> at checkout. We verify your phone number with a one-time code, then the order moves: Preparing → Shipped → Delivered → Cash collected.</p>
+            <p>New buyers have a ₦50,000 pay-on-delivery cap until their first successful orders. Sellers receive the 5% commission as an invoice — no card needed to sell.</p>
+            <a href="#picks" class="btn btn-primary" style="margin-top:8px;">Shop now, pay later</a>
+          </div>
+          <div class="feature-media" data-motion="fade-up">
+            <img src="assets/store-groceries.jpg" alt="Baskets of fresh tomatoes, peppers and rice bags in a grocery store" width="600" height="600">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seller CTA -->
+    <section class="section" id="sell">
+      <div class="container" style="text-align:center;max-width:760px;">
+        <h2 class="section-title" data-motion="fade-up">Run your whole shop from one dashboard</h2>
+        <p data-motion="fade-up">Open a NewMart storefront free. List products with stock control, track orders, add your team — Owner, Manager and Sales rep roles — and withdraw earnings to your bank. You pay 5% only when you sell.</p>
+        <div class="hero-actions" style="justify-content:center;" data-motion="fade-up">
+          <a href="sell.html" class="btn btn-primary">Open your store</a>
+          <a href="dashboard.html" class="btn btn-secondary">Explore the demo</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="kira-kit/gsap.min.js"></script>
+  <script src="kira-kit/ScrollTrigger.min.js"></script>
+  <script src="kira-kit/kira-motion.js" defer></script>
+  <script src="js/app.js"></script>
+  <script src="js/pages/index.js"></script>
+</body>
+</html>
